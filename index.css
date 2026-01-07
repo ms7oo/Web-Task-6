@@ -74,11 +74,18 @@ header {
         width: 200px;
         color: white;
         border: 0%;
-        border-radius: 1rem;
+        border-radius: 6rem;
         padding: 1rem;
         text-transform: uppercase;
         font-weight: 500;
         font-size: 1rem;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+      button:hover {
+        background-color: rgb(255, 255, 255);
+        color: #34365a;
+        border: 2px solid white;
       }
     }
   }
@@ -142,6 +149,13 @@ header {
           padding: 1rem;
           font-weight: 700;
           text-transform: uppercase;
+          cursor: pointer;
+          transition: 0.3s ease;
+        }
+        button:hover {
+          background-color: rgb(255, 255, 255);
+          color: #34365a;
+          border: 2px solid white;
         }
       }
 
@@ -198,7 +212,15 @@ header {
         .b2 {
           background-color: white;
           color: #34365a;
-          border: #34365a;
+          border: #ffffff;
+
+          cursor: pointer;
+          transition: 0.3s ease;
+        }
+        .b2:hover {
+          background-color: #34365a;
+          color: rgb(255, 255, 255);
+          border: 1px solid white;
         }
 
         button {
@@ -211,6 +233,12 @@ header {
           padding: 1rem;
           font-weight: 700;
           text-transform: uppercase;
+          cursor: pointer;
+          transition: 0.3s ease;
+        }
+        button:hover {
+          background-color: rgb(255, 255, 255);
+          color: #34365a;
         }
       }
     }
@@ -229,8 +257,6 @@ header {
     width: 70%;
     display: flex;
     position: relative;
-    /* justify-content: center;
-    align-content: center; */
 
     .son1 {
       width: 100%;
@@ -267,13 +293,20 @@ header {
 
           button {
             background-color: #34365a;
-            width: 150px;
+            width: 180px;
             color: white;
             border: 0%;
             border-radius: 6rem;
             padding: 1rem;
             font-weight: 700;
             text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s ease;
+          }
+          button:hover {
+            background-color: rgb(241, 187, 19);
+            color: #34365a;
+            border: 2px solid rgb(241, 187, 19);
           }
         }
       }
@@ -283,42 +316,370 @@ header {
 
 .section5 {
   width: 100%;
-  height: 100vh;
-  background-color: white;
   display: flex;
   justify-content: center;
 
   .upper2 {
-    width: 70%;
-    height: 15%;
+    width: 60%;
     display: flex;
-    margin-top: -200px;
+    justify-content: center;
     gap: 10rem;
+    margin-top: -200px;
 
-    .circle1 {
-      width: 100%;
-      /* height: 100%; */
-      background-color: #f1bb13;
-      border-radius: 50%;
+    .item {
+      .circle {
+        width: 118px;
+        height: 118px;
+        background-color: #f1bb13;
+        border-radius: 50%;
+        position: relative;
+
+        img {
+          width: 85%;
+          position: absolute;
+          top: 38%;
+          right: 40%;
+        }
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 3.5rem;
+        gap: 1rem;
+
+        h4 {
+          font-size: 22px;
+          color: rgb(17, 17, 17);
+          text-transform: uppercase;
+        }
+        p {
+          font-size: 16px;
+          color: rgb(17, 17, 17);
+          font-style: italic;
+        }
+      }
     }
-    .circle2 {
+  }
+}
+
+.section6 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-left: 5rem;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+
+    .box {
+      width: 454px;
+      min-height: 264px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 30px;
+      background-color: rgb(241, 187, 19);
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      gap: 1rem;
+
+      h6 {
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      h2 {
+        font-size: 48px;
+        font-weight: 700;
+      }
+    }
+    .text {
       width: 100%;
-      /* height: 100%; */
-      background-color: #f1bb13;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: left;
+      padding: 2rem 6rem 6rem 6rem;
+      gap: 2rem;
+
+      p {
+        color: rgb(17, 17, 17);
+        font-size: 16px;
+      }
+
+      button {
+        background-color: #34365a;
+        width: 180px;
+        color: white;
+        border: 0%;
+        border-radius: 6rem;
+        padding: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+      button:hover {
+        background-color: rgb(241, 187, 19);
+        color: #34365a;
+        border: 2px solid rgb(241, 187, 19);
+      }
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 2rem;
+
+    .upper {
+      width: 255px;
+      height: 255px;
       border-radius: 50%;
+      background-color: #f1bb13;
+      background-image: url(./sec6\ R.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .lower {
+      padding-top: 3rem;
+      .lowerup {
+        padding-bottom: 1.5rem;
+        display: flex;
+        .left {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          background-color: rgb(52, 54, 90);
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 36px;
+            height: 36px;
+            position: absolute;
+          }
+        }
+        .right {
+          gap: 1.5rem;
+
+          h6 {
+            color: rgb(17, 17, 17);
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            line-height: 21.6px;
+            margin: -44px 0 0 50px;
+            text-transform: uppercase;
+          }
+
+          p {
+            color: rgb(17, 17, 17);
+            font-size: 16px;
+            line-height: 25.6px;
+            margin: 0 0 0 50px;
+          }
+        }
+      }
+      .lowerdw {
+        display: flex;
+        .left {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          background-color: rgb(52, 54, 90);
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 36px;
+            height: 36px;
+            position: absolute;
+          }
+        }
+        .right {
+          gap: 1.5rem;
+
+          h6 {
+            color: rgb(17, 17, 17);
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            line-height: 21.6px;
+            margin: -44px 0 0 50px;
+            text-transform: uppercase;
+          }
+
+          p {
+            color: rgb(17, 17, 17);
+            font-size: 16px;
+            line-height: 25.6px;
+            margin: 0 0 0 50px;
+            padding-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section7 {
+  width: 100%;
+  height: 89vh;
+  background-color: rgb(241, 187, 19);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  padding: 0 0 0 6rem;
+
+  .left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 2rem; */
+    padding-left: 7rem;
+    gap: 1.5rem;
+
+    h6 {
+      color: rgb(17, 17, 17);
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      line-height: 21.6px;
+      text-transform: uppercase;
     }
 
-    .circle3 {
-      width: 100%;
-      /* height: 100%; */
-      background-color: #f1bb13;
-      border-radius: 50%;
+    h2 {
+      color: rgb(17, 17, 17);
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 52.8px;
+      padding-right: 1rem;
     }
-    .circle4 {
+    ul {
+      color: rgb(17, 17, 17);
+      font-size: 20px;
+      line-height: 36px;
+    }
+    p {
+      color: rgb(17, 17, 17);
+      font-size: 16px;
+      font-style: italic;
+      line-height: 25.6px;
+    }
+
+    button {
+      background-color: #34365a;
+      width: 180px;
+      color: #ffffff;
+      border: 0%;
+      border-radius: 6rem;
+      padding: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    button:hover {
+      background-color: rgb(255, 255, 255);
+      color: #34365a;
+      border: 2px solid rgb(241, 187, 19);
+    }
+  }
+  .right {
+    width: 60%;
+
+    img {
       width: 100%;
-      /* height: 100%; */
-      background-color: #f1bb13;
-      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.section8 {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    width: 70%;
+    height: 100%;
+
+    .parent {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+
+      .son {
+        width: 50%;
+        min-height: 422px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: left;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        gap: 1rem;
+
+        button {
+          background-color: #34365a;
+          width: 200px;
+          color: rgb(255, 255, 255);
+          border: 0%;
+          border-color: rgb(255, 255, 255);
+          border-radius: 6rem;
+          padding: 1rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: 0.3s ease;
+        }
+        button:hover {
+          background-color: rgb(255, 255, 255);
+          color: #34365a;
+          border: 2px solid white;
+        }
+
+        h2 {
+          color: rgb(255, 255, 255);
+          font-size: 48px;
+          font-weight: 700;
+          line-height: 52.8px;
+        }
+
+        img{
+          width: 20%;
+        }
+      }
+
+      .rightblue {
+        background-color: rgb(52, 54, 90);
+        color: rgb(255, 255, 255);
+        h2 {
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 42px;
+        }
+      }
     }
   }
 }
